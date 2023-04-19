@@ -26,12 +26,9 @@
             </nav>
 
             <div class="details">
-                <div class="nowplaying">
-                    Playig x of y
-
-                </div>
+        
                 <div class="track-art">
-                    <img src="./img/Cover.jpg" alt="cover picture" class="song-image">
+                    <img src="./img/Kendrick-Lamar-Mr-Morale-And-The-Big-Steppers.webp" alt="cover picture" class="song-image">
 
                 </div>
                 <div class="track-name">
@@ -45,9 +42,13 @@
             </div>
 
             <div class="slider-contaier">
-                <div class="current-time">00:00</div>
+                
                 <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekto()" id="minutes">
-                <div class="total-duration">00:00</div>
+                <div class="duration">
+                    <div class="current-time">00:00</div>
+                    <div class="total-duration">00:00</div>    
+                </div>
+              
             </div>
 
             <div class="slider-duration">
@@ -66,7 +67,6 @@
 
                 <div class="audio">
                     <audio id="song">
-                        <source src="./Media/13 Whats Poppin - (SongsLover.com).mp3" type="audio/mpeg">
                         <source src="./Media/1-02 N95 - (SongsLover.com).mp3" type="audio/mpeg">
                         <source src="./Media/1-03 Worldwide Steppers - (SongsLover.com).mp3" type="audio/mpeg">
                         <source src="./Media/1-07 Rich Spirit - (SongsLover.com).mp3" type="audio/mpeg">

@@ -75,18 +75,22 @@ p{
     background: #F3F3F3;
     border-radius: 4px;
     cursor: pointer;
-    margin: 35px 0;
+    margin: 20px 0;
 }
 
 #minutes::-webkit-slider-thumb{
     -webkit-appearance: none;
     background: #C49FEF;
+    color: #C49FEF;
     width: 10px;
     height: 10px;
     border-radius: 50%;
 
 }
 
+.volume_slider{
+    color: #C49FEF;
+}
 .buttons{
     display: flex;
     justify-content: center;
@@ -130,19 +134,32 @@ p{
     color: #1C2052;
     cursor: pointer;
 }
-/* .fw{
-    width: 40px;
-    height: 40px;
-    margin: 20px;
-    background: #F3F3F3;
-    display: inline-flex;
+
+.track-name{
+    color: #F3F3F3;
+    font-family: 'Poppins', sans-serif;
+    font-size: medium;
+
+
+}
+
+.track-artist{
+    color: #F3F3F3;
+    font-family: 'Poppins', sans-serif;
+    font-size: small;
+
+}
+
+.current-time{
+    color: #F3F3F3;
+}
+
+.total-duration{
+    color: #F3F3F3;
+}
+
+.duration{
+    display: flex;
     justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    color: #1C2052;
-    cursor: pointer;
-
-} */
-
-
-    
+    gap: 80%;
+}
