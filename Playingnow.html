@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9757b1b0ab.js" crossorigin="anonymous"></script>
+    <title>music-player</title>
+</head>
+<body>
+    <div class="container">
+        <div class="music-player">
+
+            <nav>
+                <div class="top-icon">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+
+                <div class="top-icon">
+                    <i class="fa-solid fa-bars"></i>
+                </div>    
+            </nav>
+
+            <div class="details">
+                <div class="nowplaying">
+                    Playig x of y
+
+                </div>
+                <div class="track-art">
+                    <img src="./img/Cover.jpg" alt="cover picture" class="song-image">
+
+                </div>
+                <div class="track-name">
+                    Track Name
+
+                </div>
+                <div class="track-artist">
+                    Track Artist
+
+                </div>
+            </div>
+
+            <div class="slider-contaier">
+                <div class="current-time">00:00</div>
+                <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekto()" id="minutes">
+                <div class="total-duration">00:00</div>
+            </div>
+
+            <div class="slider-duration">
+                <i class="fa fa-volume-down"></i>
+                <input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setvolume()">
+                <i class="fa fa-volume-up"></i>
+            </div>
+
+            <div class="buttons">
+                <div class="prev-track skipBtn" onclick="prevtrack()"><i class="fa-solid fa-backward"></i></div>
+                <div class="pauseplay-track" onclick="pauseplaytrack()"><i class="fa-solid fa-play " id="controlicon"></i></div>
+                <div class="next-track skipBtn" onclick="nextTrack()"><i class="fa-solid fa-forward"></i></div>
+            </div>
+
+            <div class="playlist">
+
+                <div class="audio">
+                    <audio id="song">
+                        <source src="./Media/13 Whats Poppin - (SongsLover.com).mp3" type="audio/mpeg">
+                        <source src="./Media/1-02 N95 - (SongsLover.com).mp3" type="audio/mpeg">
+                        <source src="./Media/1-03 Worldwide Steppers - (SongsLover.com).mp3" type="audio/mpeg">
+                        <source src="./Media/1-07 Rich Spirit - (SongsLover.com).mp3" type="audio/mpeg">
+                        <source src="./Media/2-05 Savior - (SongsLover.com).mp3" type="audio/mpeg">
+                    </audio>
+                 
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+    
+</body>
+</html>
