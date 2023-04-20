@@ -13,6 +13,9 @@ const nowPlaying = document.querySelector('.nowplaying');
 const audio = document.getElementById('song');
 const sources = Array.from(audio.querySelectorAll('source')).map(source => source.src);
 const songs = audio.getElementsByTagName('source');
+// const audio = document.querySelector('audio');
+const volumeUpButton = document.getElementById('volume-up');
+const volumeDownButton = document.getElementById('volume-down');
 
 // initialize audio duration and current time
 audio.onloadedmetadata = () => {
@@ -104,5 +107,17 @@ function playSong(index) {
   
   document.querySelector('.prev-track').addEventListener('click', prevSong);
   document.querySelector('.next-track').addEventListener('click', nextSong);
+
+//   // Volume up button click handler
+// volumeUpButton.addEventListener('click', () => {
+//   // Increase the volume by 0.1
+//   audio.volume += 0.1;
+// });
+
+// // Volume down button click handler
+// volumeDownButton.addEventListener('click', () => {
+//   // Decrease the volume by 0.1
+//   audio.volume -= 0.1;
+// });
 
 
